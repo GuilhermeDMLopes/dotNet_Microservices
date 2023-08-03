@@ -18,7 +18,7 @@ builder.Services.AddDbContext<AppDbContext>(opt => opt.UseMySql(connectionString
 
 builder.Services.AddScoped<IRestauranteRepository, RestauranteRepository>();
 
-//Tornando o ItemServiceHttpClient em um Client Http
+//Tornando o ItemServiceHttpClient em um Client Http.
 builder.Services.AddHttpClient<IItemServiceHttpClient, ItemServiceHttpClient>();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
