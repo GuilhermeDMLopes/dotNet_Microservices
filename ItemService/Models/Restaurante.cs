@@ -7,8 +7,10 @@ namespace ItemService.Models
     {
         [Key]
         [Required]
+        //Id do restaurante no banco local
         public int Id { get; set; }
 
+        //Id do restaurante recebido de RestauranteService
         [Required]
         public int IdExterno { get; set; }
 
