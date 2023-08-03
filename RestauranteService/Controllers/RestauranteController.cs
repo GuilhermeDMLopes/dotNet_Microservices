@@ -4,6 +4,7 @@ using RestauranteService.Data;
 using RestauranteService.Dtos;
 using RestauranteService.ItemServiceHttpClient;
 using RestauranteService.Models;
+using RestauranteService.RabbitMqClient;
 
 namespace RestauranteService.Controllers;
 
@@ -14,14 +15,16 @@ public class RestauranteController : ControllerBase
     private readonly IRestauranteRepository _repository;
     private readonly IMapper _mapper;
     private IItemServiceHttpClient _itemServiceHttpClient;
+    private IRabbitMqClient _rabbitMqClient;
 
     public RestauranteController(
         IRestauranteRepository repository,
-        IMapper mapper, IItemServiceHttpClient itemServiceHttpClient)
+        IMapper mapper, IItemServiceHttpClient itemServiceHttpClient, IRabbitMqClient rabbitMqClient)
     {
         _repository = repository;
         _mapper = mapper;
         _itemServiceHttpClient = itemServiceHttpClient;
+        _rabbitMqClient = rabbitMqClient;
     }
 
     [HttpGet]
@@ -56,7 +59,10 @@ public class RestauranteController : ControllerBase
 
         //No momento em que fizermos o cadastro do restaurante, nosso item service recebe uma "notificação" desse novo restaurante para que consigamos cadastrar novos itens nele
         //Faremos isso enviando uma requisição via http
-        _itemServiceHttpClient.EnviaRestauranteParaItemService(restauranteReadDto);
+        //_itemServiceHttpClient.EnviaRestauranteParaItemService(restauranteReadDto);
+
+        //Comunicação assíncrona
+        _rabbitMqClient.PublicaRestaurante(restauranteReadDto);
 
 
         return CreatedAtRoute(nameof(GetRestauranteById), new { restauranteReadDto.Id }, restauranteReadDto);
