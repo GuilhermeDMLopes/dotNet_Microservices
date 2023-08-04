@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vl3gXphpKzuX59Af6OmXRq8HrBwmd9z8Juz2wnt92/lfK3wQtsvtLWhyPe5YyNZlnbpLHZfZAbJQbvNhhOjB/Q==",
+  "dgSpecHash": "LJrLIGwP0H0YexUDokT6jAITwS9ZtznImM8ZgNuOCaSOpd8M8mzkuTdMuAuRaua8xO3AfdgYhr05Qwo9BuZXlA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\guilh\\OneDrive\\Área de Trabalho\\Projetos\\dotNet_Microservices\\ItemService\\ItemService.csproj",
+  "projectFilePath": "C:\\Users\\guilh\\Dropbox\\PC\\Downloads\\2461-microservices-dotnet-Aula-5\\2461-microservices-dotnet-Aula-5\\ItemService\\ItemService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guilh\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\guilh\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

@@ -57,11 +57,8 @@ public class RestauranteController : ControllerBase
 
         var restauranteReadDto = _mapper.Map<RestauranteReadDto>(restaurante);
 
-        //No momento em que fizermos o cadastro do restaurante, nosso item service recebe uma "notificação" desse novo restaurante para que consigamos cadastrar novos itens nele
-        //Faremos isso enviando uma requisição via http
         //_itemServiceHttpClient.EnviaRestauranteParaItemService(restauranteReadDto);
 
-        //Comunicação assíncrona
         _rabbitMqClient.PublicaRestaurante(restauranteReadDto);
 
 

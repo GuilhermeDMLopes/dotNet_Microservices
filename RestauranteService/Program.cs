@@ -19,10 +19,8 @@ builder.Services.AddDbContext<AppDbContext>(opt => opt.UseMySql(connectionString
 
 builder.Services.AddScoped<IRestauranteRepository, RestauranteRepository>();
 
-//Declaração do RabbitMQ
-builder.Services.AddSingleton<IRabbitMqClient, RabbitMqClient>();
 
-//Tornando o ItemServiceHttpClient em um Client Http.
+builder.Services.AddSingleton<IRabbitMqClient, RabbitMqClient>();
 builder.Services.AddHttpClient<IItemServiceHttpClient, ItemServiceHttpClient>();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
