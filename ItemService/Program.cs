@@ -16,9 +16,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("InMemoryDatabase"));
 builder.Services.AddScoped<IItemRepository, ItemRepository>();
-//Adicionando serviço do RabbitMQ
 builder.Services.AddHostedService<RabbitMqSubscriber>();
-//Adicionando o processo do evento
 builder.Services.AddSingleton<IProcessaEvento, ProcessaEvento>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddSwaggerGen(c =>

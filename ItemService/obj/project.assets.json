@@ -4738,11 +4738,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\guilh\\OneDrive\\Área de Trabalho\\Projetos\\dotNet_Microservices\\ItemService\\ItemService.csproj",
+      "projectUniqueName": "C:\\Users\\guilh\\Dropbox\\PC\\Downloads\\2461-microservices-dotnet-Aula-5\\2461-microservices-dotnet-Aula-5\\ItemService\\ItemService.csproj",
       "projectName": "ItemService",
-      "projectPath": "C:\\Users\\guilh\\OneDrive\\Área de Trabalho\\Projetos\\dotNet_Microservices\\ItemService\\ItemService.csproj",
+      "projectPath": "C:\\Users\\guilh\\Dropbox\\PC\\Downloads\\2461-microservices-dotnet-Aula-5\\2461-microservices-dotnet-Aula-5\\ItemService\\ItemService.csproj",
       "packagesPath": "C:\\Users\\guilh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\guilh\\OneDrive\\Área de Trabalho\\Projetos\\dotNet_Microservices\\ItemService\\obj\\",
+      "outputPath": "C:\\Users\\guilh\\Dropbox\\PC\\Downloads\\2461-microservices-dotnet-Aula-5\\2461-microservices-dotnet-Aula-5\\ItemService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\guilh\\AppData\\Roaming\\NuGet\\NuGet.Config",

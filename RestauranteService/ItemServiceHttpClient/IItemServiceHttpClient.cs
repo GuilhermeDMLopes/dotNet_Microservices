@@ -1,5 +1,4 @@
-﻿//Interface responsavel por enviar requisição http de restaurante para itemService
-using RestauranteService.Dtos;
+﻿using RestauranteService.Dtos;
 
 namespace RestauranteService.ItemServiceHttpClient
 {
