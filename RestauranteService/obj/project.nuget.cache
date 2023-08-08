@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bYa2eiXvBMLyJRCeWWpk7y/5JNUE2DVmxesQRsaj7vgFzaLsMf/gvMa1aTqWKY8rjbPokefR5zfvWN6NEpCayw==",
+  "dgSpecHash": "bv0LtO95sb1LDmYKsI5sfjg+oHLyRsDT75TNsw9uhNFBhy4uaAtKKcve70KKyP1CtRB/gZHXlm3++HKusEvvYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\guilh\\Dropbox\\PC\\Downloads\\2461-microservices-dotnet-Aula-5\\2461-microservices-dotnet-Aula-5\\RestauranteService\\RestauranteService.csproj",
+  "projectFilePath": "C:\\Users\\guilh\\OneDrive\\Área de Trabalho\\Projetos\\dotNet_Microservices\\RestauranteService\\RestauranteService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guilh\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\guilh\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
